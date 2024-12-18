@@ -4,18 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <meta name="description" content="Tam Do's personal website showcasing research and ultimate frisbee interests.">
+    <meta name="keywords" content="Tam Do, research, ultimate frisbee, personal website">
+    <meta name="author" content="Tam Do">
+    <meta property="og:title" content="Tam Do">
+    <meta property="og:description" content="Explore Tam Do's research and passion for ultimate frisbee.">
+    <meta property="og:image" content="path/to/image.jpg">
+    <meta property="og:url" content="https://yourwebsite.github.io">
+    <meta property="og:type" content="website">
+    <title>Tam Do</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
             background-color: #333;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
             color: white;
         }
@@ -29,12 +45,23 @@
         nav a {
             color: white;
             text-decoration: none;
-            padding: 10px;
+            padding: 10px 20px;
             margin: 0 10px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #444;
+            border-radius: 5px;
         }
 
         main {
             padding: 20px;
+            flex: 1;
+        }
+
+        section {
+            margin-bottom: 40px;
         }
 
         footer {
@@ -42,9 +69,7 @@
             color: white;
             text-align: center;
             padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            margin-top: auto;
         }
     </style>
 </head>
@@ -52,22 +77,31 @@
 <body>
 
     <header>
-        <h1>Your Website Title</h1>
+        <h1>Tam Do</h1>
     </header>
 
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#research" aria-label="Research">Research</a>
+        <a href="#ultimate-frisbee" aria-label="Ultimate Frisbee">Ultimate Frisbee</a>
     </nav>
 
     <main>
-        <h2>Welcome to Your Website!</h2>
-        <p>This is a simple example of an HTML website. Customize it according to your needs.</p>
+        <section id="research">
+            <h2>Research</h2>
+            <p>Welcome to my research section! Here, I showcase my work, ideas, and projects related to science and technology.</p>
+        </section>
+
+        <section id="ultimate-frisbee">
+            <h2>Ultimate Frisbee</h2>
+            <p>In this section, I share my passion for ultimate frisbee, including team updates, tournaments, and personal experiences.</p>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Tam Do. All rights reserved.</p>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
     </footer>
 
 </body>
