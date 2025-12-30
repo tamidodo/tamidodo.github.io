@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tam Do's personal website showcasing research and ultimate frisbee interests.">
-    <meta name="keywords" content="Tam Do, research, ultimate frisbee, personal website">
+    <meta name="description" content="Academic profile and CV highlights for Tam Do.">
+    <meta name="keywords" content="Tam Do, academic CV, research, astrophysics, orbital dynamics">
     <meta name="author" content="Tam Do">
-    <meta property="og:title" content="Tam Do">
-    <meta property="og:description" content="Explore Tam Do's research and passion for ultimate frisbee.">
-    <meta property="og:image" content="path/to/image.jpg">
-    <meta property="og:url" content="https://yourwebsite.github.io">
+    <meta property="og:title" content="Tam Do | Academic Profile">
+    <meta property="og:description" content="Education, research, and experience highlights from Tam Do's academic CV.">
     <meta property="og:type" content="website">
-    <title>Tam Do</title>
+    <title>Tam Do | Academic Profile</title>
     <style>
-        /* Reset */
+        :root {
+            color-scheme: light;
+            --ink: #0f172a;
+            --muted: #475569;
+            --accent: #1d4ed8;
+            --accent-soft: #e0e7ff;
+            --surface: #ffffff;
+            --surface-muted: #f8fafc;
+            --border: #e2e8f0;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -22,113 +29,355 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            font-family: "Inter", "Segoe UI", sans-serif;
+            color: var(--ink);
+            background: var(--surface-muted);
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            text-decoration: underline;
         }
 
         header {
-            background-color: #333;
-            padding: 15px;
-            text-align: center;
-            color: white;
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .container {
+            width: min(1100px, 92vw);
+            margin: 0 auto;
+        }
+
+        .hero {
+            display: grid;
+            gap: 24px;
+            padding: 48px 0 32px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 3vw, 3rem);
+            letter-spacing: -0.02em;
+        }
+
+        .hero p {
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        .tagline {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.9rem;
         }
 
         nav {
-            background-color: #666;
-            padding: 10px;
-            text-align: center;
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            list-style: none;
+            padding: 16px 0;
         }
 
         nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            display: inline-block;
-        }
-
-        nav a:hover {
-            background-color: #444;
-            border-radius: 5px;
+            color: var(--ink);
+            font-weight: 500;
         }
 
         main {
-            padding: 20px;
-            flex: 1;
+            padding: 40px 0 60px;
         }
 
         section {
-            margin-bottom: 40px;
+            margin-bottom: 36px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+        }
+
+        section h2 {
+            margin-bottom: 16px;
+            font-size: 1.6rem;
+        }
+
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .two-column {
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        }
+
+        .list {
+            list-style: none;
+            display: grid;
+            gap: 12px;
+        }
+
+        .list strong {
+            display: block;
+            font-weight: 600;
+        }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .chip {
+            background: var(--surface-muted);
+            border: 1px solid var(--border);
+            padding: 6px 12px;
+            border-radius: 999px;
+            font-size: 0.9rem;
         }
 
         footer {
-            background-color: #333;
-            color: white;
+            padding: 24px 0 32px;
             text-align: center;
-            padding: 10px;
-            margin-top: auto;
+            color: var(--muted);
+        }
+
+        .contact-card {
+            background: var(--surface-muted);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+        }
+
+        .contact-card p {
+            margin-bottom: 8px;
+        }
+
+        .cv-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+
+        @media (max-width: 720px) {
+            nav ul {
+                gap: 10px;
+            }
+
+            section {
+                padding: 22px;
+            }
         }
     </style>
 </head>
-
 <body>
-
     <header>
-        <h1>Tam Do</h1>
+        <div class="container hero">
+            <span class="tagline">Academic CV</span>
+            <div>
+                <h1>Tam Do</h1>
+                <p>Research-focused profile highlighting education, professional experience, and technical strengths.</p>
+            </div>
+        </div>
     </header>
 
     <nav>
-        <a href="#research" aria-label="Research">Research</a>
-        <a href="#ultimate-frisbee" aria-label="Ultimate Frisbee">Ultimate Frisbee</a>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#research">Research &amp; Projects</a></li>
+                <li><a href="#skills">Technical Skills</a></li>
+                <li><a href="#activities">Leadership &amp; Activities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
-        <section id="research">
-            <h2>Research</h2>
-
-            <section id="research-interests">
-                <h3>Research Interests</h3>
-                <p>Explore my areas of interest, including astrophysics, orbital mechanics, and satellite tracking.</p>
-            </section>
-
-            <section id="projects">
-                <h3>Projects</h3>
-
-                <h4>UBC Co-op: Observations of Supernova Remnant CTA1</h4>
-                <p>Analyzed observational data to better understand the characteristics of the supernova remnant CTA1.</p>
-
-                <h4>UBC Honours Undergraduate Thesis: Impact of Yarkovsky Effect Modification Due to 2029 Fly-by on the Close Approach Structure of 99942 Apophis</h4>
-                <p>Investigated how the 2029 close approach of Apophis might alter its trajectory through Yarkovsky effect perturbations.</p>
-
-                <h4>UWO Masters Thesis: Characterizing Meteoroid Origins by Simulating Their Orbital Histories</h4>
-                <p>Developed simulations to trace the origins of meteoroids and understand their contribution to planetary science.</p>
-
-                <h4>UWO Collaboration with DRDC: Luciole Satellite Tracking</h4>
-                <p>Collaborated with DRDC to improve tracking and analysis methods for the Luciole satellite system.</p>
-            </section>
-
-            <section id="publications-conferences">
-                <h3>Publications and Conferences</h3>
-                <p>Details about my published papers and conference presentations will be added here.</p>
-            </section>
+    <main class="container">
+        <section id="about">
+            <h2>About</h2>
+            <div class="grid two-column">
+                <div>
+                    <p>
+                        Tam Do is engaged in academic research with a focus on data-driven projects and scientific
+                        collaboration. The profile below summarizes education milestones, research roles, and
+                        technical expertise from the academic CV.
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <p><strong>Location</strong> 310 East 43rd Ave, Vancouver, Canada, V5W 1T3</p>
+                    <p><strong>Phone</strong> +1 778-875-0255</p>
+                    <p><strong>Email</strong> <a href="mailto:tdo47@uwo.ca">tdo47@uwo.ca</a></p>
+                    <p><strong>GitHub</strong> <a href="https://github.com/tamidodo">github.com/tamidodo</a></p>
+                    <a class="cv-link" href="Academic_CV.pdf">Download Academic CV →</a>
+                </div>
+            </div>
         </section>
 
-        <section id="ultimate-frisbee">
-            <h2>Ultimate Frisbee</h2>
-            <p>In this section, I share my passion for ultimate frisbee, including team updates, tournaments, and personal experiences.</p>
+        <section id="education">
+            <h2>Education</h2>
+            <ul class="list">
+                <li>
+                    <strong>University of Western Ontario, London, Canada</strong>
+                    <span>Sept 2025 – Present</span>
+                </li>
+                <li>
+                    <strong>University of Western Ontario, London, Canada</strong>
+                    <span>Sept 2023 – Aug 2025 · 2 years of coursework/research</span>
+                </li>
+                <li>
+                    <strong>University of British Columbia, Vancouver, Canada</strong>
+                    <span>Sept 2017 – April 2022 · 4 years of coursework, 16-month co-op, graduated with Honours and Distinction</span>
+                </li>
+                <li>
+                    <strong>York House School, Vancouver, Canada</strong>
+                    <span>Sept 2013 – Jun 2017 · Condensed five years into four, graduated a year early</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <ul class="list">
+                <li>
+                    <strong>University of Western Ontario</strong>
+                    <span>Sept 2023 – Present</span>
+                </li>
+                <li>
+                    <strong>Plotly</strong>
+                    <span>May 2022 – April 2024 · Python-focused development</span>
+                </li>
+                <li>
+                    <strong>Outer Space Institute</strong>
+                    <span>Jun 2022 – Oct 2022</span>
+                </li>
+                <li>
+                    <strong>Allwest Auto Insurance</strong>
+                    <span>Oct 2020 – Jun 2022 · Python, SQL, Flask, HTML</span>
+                </li>
+                <li>
+                    <strong>National Research Council</strong>
+                    <span>Jan 2021 – Aug 2021 · Perl, Fortran, EXPORT, Karma (kvis), Python, astropy</span>
+                </li>
+                <li>
+                    <strong>UBC Faculty of Medicine, IT &amp; Educational Technology</strong>
+                    <span>May 2020 – Dec 2020</span>
+                </li>
+                <li>
+                    <strong>Dr. Meghan Winters’ Cities, Health and Active Transportation Research Lab</strong>
+                    <span>Apr 2018 – Dec 2020</span>
+                </li>
+                <li>
+                    <strong>Research Assistant · Dr. Doan’s Lab, BC Children’s Hospital</strong>
+                    <span>May 2018 – Jun 2020</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="research">
+            <h2>Research &amp; Projects</h2>
+            <div class="grid two-column">
+                <div>
+                    <h3>Highlights</h3>
+                    <ul class="list">
+                        <li>
+                            <strong>Asteroid Dynamics</strong>
+                            <span>Research themes include orbital dynamics and close-approach studies (e.g., 99942 Apophis).</span>
+                        </li>
+                        <li>
+                            <strong>Simulation &amp; Modeling Tools</strong>
+                            <span>Experience with REBOUND/X and related research tooling.</span>
+                        </li>
+                        <li>
+                            <strong>Observational Data Analysis</strong>
+                            <span>Applied astrophysical data analysis techniques across academic collaborations.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Selected Research Roles</h3>
+                    <ul class="list">
+                        <li>
+                            <strong>University of Western Ontario</strong>
+                            <span>Graduate research and coursework across 2023–2025.</span>
+                        </li>
+                        <li>
+                            <strong>University of British Columbia</strong>
+                            <span>Undergraduate research and co-op placements across 2017–2022.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">SQL</span>
+                <span class="chip">Flask</span>
+                <span class="chip">HTML</span>
+                <span class="chip">Perl</span>
+                <span class="chip">Fortran</span>
+                <span class="chip">EXPORT</span>
+                <span class="chip">Karma (kvis)</span>
+                <span class="chip">astropy</span>
+                <span class="chip">REBOUND/X</span>
+            </div>
+        </section>
+
+        <section id="activities">
+            <h2>Leadership &amp; Activities</h2>
+            <ul class="list">
+                <li>
+                    <strong>BC Children’s Hospital START Program</strong>
+                    <span>Oct 2017 – May 2018</span>
+                </li>
+                <li>
+                    <strong>Vietnamese Buddhist Youth Association – Vancouver Chapter</strong>
+                    <span>Dec 2016 – May 2018</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                For research collaborations or academic inquiries, reach out via
+                <a href="mailto:tdo47@uwo.ca">tdo47@uwo.ca</a> or connect on
+                <a href="https://github.com/tamidodo">GitHub</a>.
+            </p>
         </section>
     </main>
 
     <footer>
         <p>&copy; <span id="year"></span> Tam Do. All rights reserved.</p>
-        <script>
-            document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
     </footer>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
-
 </html>
