@@ -1,380 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Academic profile and CV highlights for Tam Do.">
-    <meta name="keywords" content="Tam Do, academic CV, research, astrophysics, orbital dynamics">
-    <meta name="author" content="Tam Do">
-    <meta property="og:title" content="Tam Do | Academic Profile">
-    <meta property="og:description" content="Education, research, and experience highlights from Tam Do's academic CV.">
-    <meta property="og:type" content="website">
-    <title>Tam Do | Academic Profile</title>
-    <style>
-        :root {
-            color-scheme: light;
-            --ink: #0f172a;
-            --muted: #475569;
-            --accent: #1d4ed8;
-            --accent-soft: #e0e7ff;
-            --surface: #ffffff;
-            --surface-muted: #f8fafc;
-            --border: #e2e8f0;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Inter", "Segoe UI", sans-serif;
-            color: var(--ink);
-            background: var(--surface-muted);
-            line-height: 1.6;
-        }
-
-        a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-
-        a:hover,
-        a:focus {
-            text-decoration: underline;
-        }
-
-        header {
-            background: var(--surface);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .container {
-            width: min(1100px, 92vw);
-            margin: 0 auto;
-        }
-
-        .hero {
-            display: grid;
-            gap: 24px;
-            padding: 48px 0 32px;
-        }
-
-        .hero h1 {
-            font-size: clamp(2.2rem, 3vw, 3rem);
-            letter-spacing: -0.02em;
-        }
-
-        .hero p {
-            color: var(--muted);
-            font-size: 1.05rem;
-        }
-
-        .tagline {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 6px 14px;
-            border-radius: 999px;
-            background: var(--accent-soft);
-            color: var(--accent);
-            font-weight: 600;
-            font-size: 0.9rem;
-        }
-
-        nav {
-            background: var(--surface);
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-        }
-
-        nav ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-            list-style: none;
-            padding: 16px 0;
-        }
-
-        nav a {
-            color: var(--ink);
-            font-weight: 500;
-        }
-
-        main {
-            padding: 40px 0 60px;
-        }
-
-        section {
-            margin-bottom: 36px;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 28px;
-            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
-        }
-
-        section h2 {
-            margin-bottom: 16px;
-            font-size: 1.6rem;
-        }
-
-        .grid {
-            display: grid;
-            gap: 20px;
-        }
-
-        .two-column {
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        }
-
-        .list {
-            list-style: none;
-            display: grid;
-            gap: 12px;
-        }
-
-        .list strong {
-            display: block;
-            font-weight: 600;
-        }
-
-        .chips {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .chip {
-            background: var(--surface-muted);
-            border: 1px solid var(--border);
-            padding: 6px 12px;
-            border-radius: 999px;
-            font-size: 0.9rem;
-        }
-
-        footer {
-            padding: 24px 0 32px;
-            text-align: center;
-            color: var(--muted);
-        }
-
-        .contact-card {
-            background: var(--surface-muted);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 18px;
-        }
-
-        .contact-card p {
-            margin-bottom: 8px;
-        }
-
-        .cv-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-top: 8px;
-            font-weight: 600;
-        }
-
-        @media (max-width: 720px) {
-            nav ul {
-                gap: 10px;
-            }
-
-            section {
-                padding: 22px;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tammy Do — Astronomy</title>
+<meta name="description" content="Tammy Do — PhD candidate in Astronomy at the University of Western Ontario, studying the dynamical origins of meteoroids, satellite monitoring, and planetary defense.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="container hero">
-            <span class="tagline">Academic CV</span>
-            <div>
-                <h1>Tam Do</h1>
-                <p>Research-focused profile highlighting education, professional experience, and technical strengths.</p>
-            </div>
+<div class="sky" aria-hidden="true"></div>
+<div class="meteor" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 26 26" fill="none">
+          <path d="M3 23 L15.5 10.5" stroke="url(#mg)" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="18.5" cy="7.5" r="4" fill="url(#mg2)"/>
+          <defs>
+            <linearGradient id="mg" x1="3" y1="23" x2="15.5" y2="10.5" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ff7a45" stop-opacity="0"/><stop offset="1" stop-color="#ffb454"/>
+            </linearGradient>
+            <radialGradient id="mg2" cx="0.4" cy="0.35" r="0.7">
+              <stop stop-color="#ffd9a0"/><stop offset="1" stop-color="#ff5c3a"/>
+            </radialGradient>
+          </defs>
+        </svg>
+      </span>
+      <span>Tammy <b class="accent">Do</b></span>
+    </a>
+    <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+    <ul class="menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="coding.html">Coding</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero__grid">
+      <div>
+        <p class="eyebrow">PhD candidate · Astronomy</p>
+        <h1>Tammy <span class="accent">Do</span></h1>
+        <p class="role">University of Western Ontario · Western Meteor Physics Group</p>
+        <p>I study the dynamical origins of meteoroids — working out whether the small bodies that strike Earth's atmosphere came from asteroids or comets by reconstructing their orbital evolution histories. My work spans low-velocity Earth impactors, satellite and debris re-entry detection, and space situational awareness.</p>
+        <p>Before Western, I completed a BSc in Honours Physics and Astronomy at the University of British Columbia, with research in planetary defense and radio astronomy.</p>
+        <p class="lorem">[Add a sentence or two here in your own voice — what draws you to this work, or what you're most excited about right now. Lorem ipsum dolor sit amet, consectetur adipiscing elit.]</p>
+        <div class="hero__cta">
+          <a class="btn btn--solid" href="research.html">View research</a>
+          <a class="btn" href="https://github.com/tamidodo" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
-    </header>
-
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#research">Research &amp; Projects</a></li>
-                <li><a href="#skills">Technical Skills</a></li>
-                <li><a href="#activities">Leadership &amp; Activities</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+      </div>
+      <div class="portrait">
+        <!-- Replace the placeholder below with: <img src="images/profile.jpg" alt="Tammy Do"> -->
+        <div class="portrait__ph">
+          <span>☄</span>
+          add images/profile.jpg
         </div>
-    </nav>
+      </div>
+    </div>
+  </section>
 
-    <main class="container">
-        <section id="about">
-            <h2>About</h2>
-            <div class="grid two-column">
-                <div>
-                    <p>
-                        Tam Do is engaged in academic research with a focus on data-driven projects and scientific
-                        collaboration. The profile below summarizes education milestones, research roles, and
-                        technical expertise from the academic CV.
-                    </p>
-                </div>
-                <div class="contact-card">
-                    <p><strong>Email</strong> <a href="mailto:tdo47@uwo.ca">tdo47@uwo.ca</a></p>
-                    <p><strong>GitHub</strong> <a href="https://github.com/tamidodo">github.com/tamidodo</a></p>
-                </div>
-            </div>
-        </section>
+  <!-- LATEST RESEARCH -->
+  <section class="section wrap">
+    <div class="section__head">
+      <p class="eyebrow">Selected work</p>
+      <h2 class="section__title">Latest research</h2>
+    </div>
+    <div class="cards">
+      <a class="card" href="research.html#meteoroids">
+        <p class="card__tag">Meteoroid dynamics</p>
+        <h3>Dynamically characterizing sporadic meteoroid origins</h3>
+        <p>Simulated orbital histories for 387 observed meteors to classify them as asteroidal or cometary, focusing on the difficult sub-35 km/s velocity regime.</p>
+        <span class="card__more">Read more →</span>
+      </a>
+      <a class="card" href="research.html#luciole">
+        <p class="card__tag">Space situational awareness</p>
+        <h3>Luciole low Earth orbit satellite monitoring</h3>
+        <p>Built a public-facing dashboard surfacing nightly megaconstellation satellite detections, brightness statistics, and interactive ground tracks over Canada.</p>
+        <span class="card__more">Read more →</span>
+      </a>
+      <a class="card" href="research.html#apophis">
+        <p class="card__tag">Planetary defense</p>
+        <h3>Yarkovsky modification &amp; the 99942 Apophis close approach</h3>
+        <p>Ran high-fidelity REBOUND/x simulations of Apophis's 2029 flyby to examine Earth's effect on its spin state and recompute gravitational keyholes.</p>
+        <span class="card__more">Read more →</span>
+      </a>
+      <a class="card" href="research.html#cta1">
+        <p class="card__tag">Radio astronomy</p>
+        <h3>New radio observations of the supernova remnant CTA 1</h3>
+        <p>Processed DRAO Synthesis Telescope data to study CTA 1 in radio continuum, linear polarization, and neutral hydrogen — published in ApJ (2024).</p>
+        <span class="card__more">Read more →</span>
+      </a>
+    </div>
+  </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <ul class="list">
-                <li>
-                    <strong>University of Western Ontario, London, Canada</strong>
-                    <span>Sept 2025 – Present</span>
-                </li>
-                <li>
-                    <strong>University of Western Ontario, London, Canada</strong>
-                    <span>Sept 2023 – Aug 2025 · 2 years of coursework/research</span>
-                </li>
-                <li>
-                    <strong>University of British Columbia, Vancouver, Canada</strong>
-                    <span>Sept 2017 – April 2022 · 4 years of coursework, 16-month co-op, graduated with Honours and Distinction</span>
-                </li>
-                <li>
-                    <strong>York House School, Vancouver, Canada</strong>
-                    <span>Sept 2013 – Jun 2017 · Condensed five years into four, graduated a year early</span>
-                </li>
-            </ul>
-        </section>
+  <!-- IN THE NEWS (placeholder) -->
+  <section class="section wrap">
+    <div class="section__head">
+      <p class="eyebrow">Press &amp; talks</p>
+      <h2 class="section__title">In the news</h2>
+    </div>
+    <p class="lorem" style="margin-top:-10px;margin-bottom:20px;">Replace these with real coverage, interviews, or talk recordings. The link text and source label on each row are editable.</p>
+    <ul class="linklist">
+      <li><a href="#"><span class="src">Talk</span><span class="lorem">Lorem ipsum — title of a recorded talk or conference presentation</span></a></li>
+      <li><a href="#"><span class="src">Article</span><span class="lorem">Dolor sit amet — popular-science coverage of your work</span></a></li>
+      <li><a href="#"><span class="src">Interview</span><span class="lorem">Consectetur adipiscing — podcast or department feature</span></a></li>
+    </ul>
+  </section>
 
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <ul class="list">
-                <li>
-                    <strong>University of Western Ontario</strong>
-                    <span>Sept 2023 – Present</span>
-                </li>
-                <li>
-                    <strong>Plotly</strong>
-                    <span>May 2022 – April 2024 · Python-focused development</span>
-                </li>
-                <li>
-                    <strong>Outer Space Institute</strong>
-                    <span>Jun 2022 – Oct 2022</span>
-                </li>
-                <li>
-                    <strong>Allwest Auto Insurance</strong>
-                    <span>Oct 2020 – Jun 2022 · Python, SQL, Flask, HTML</span>
-                </li>
-                <li>
-                    <strong>National Research Council</strong>
-                    <span>Jan 2021 – Aug 2021 · Perl, Fortran, EXPORT, Karma (kvis), Python, astropy</span>
-                </li>
-                <li>
-                    <strong>UBC Faculty of Medicine, IT &amp; Educational Technology</strong>
-                    <span>May 2020 – Dec 2020</span>
-                </li>
-                <li>
-                    <strong>Dr. Meghan Winters’ Cities, Health and Active Transportation Research Lab</strong>
-                    <span>Apr 2018 – Dec 2020</span>
-                </li>
-                <li>
-                    <strong>Research Assistant · Dr. Doan’s Lab, BC Children’s Hospital</strong>
-                    <span>May 2018 – Jun 2020</span>
-                </li>
-            </ul>
-        </section>
+  <!-- GITHUB CALLOUT -->
+  <section class="wrap">
+    <div class="callout">
+      <div>
+        <h3>My GitHub is full of working code</h3>
+        <p>Simulation pipelines, dashboards, and analysis tools — find the latest there.</p>
+      </div>
+      <a class="btn btn--solid" href="https://github.com/tamidodo" target="_blank" rel="noopener">Warp me there ↗</a>
+    </div>
+  </section>
+</main>
 
-        <section id="research">
-            <h2>Research &amp; Projects</h2>
-            <div class="grid two-column">
-                <div>
-                    <h3>Highlights</h3>
-                    <ul class="list">
-                        <li>
-                            <strong>Asteroid Dynamics</strong>
-                            <span>Research themes include orbital dynamics and close-approach studies (e.g., 99942 Apophis).</span>
-                        </li>
-                        <li>
-                            <strong>Simulation &amp; Modeling Tools</strong>
-                            <span>Experience with REBOUND/X and related research tooling.</span>
-                        </li>
-                        <li>
-                            <strong>Observational Data Analysis</strong>
-                            <span>Applied astrophysical data analysis techniques across academic collaborations.</span>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Selected Research Roles</h3>
-                    <ul class="list">
-                        <li>
-                            <strong>University of Western Ontario</strong>
-                            <span>Graduate research and coursework across 2023–2025.</span>
-                        </li>
-                        <li>
-                            <strong>University of British Columbia</strong>
-                            <span>Undergraduate research and co-op placements across 2017–2022.</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+<footer class="foot">
+  <div class="wrap">
+    <p>© 2026 Tammy Do</p>
+    <p><a href="mailto:tdo47@uwo.ca">tdo47@uwo.ca</a> · <a href="https://github.com/tamidodo" target="_blank" rel="noopener">github.com/tamidodo</a></p>
+  </div>
+</footer>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="chips">
-                <span class="chip">Python</span>
-                <span class="chip">SQL</span>
-                <span class="chip">Flask</span>
-                <span class="chip">HTML</span>
-                <span class="chip">Perl</span>
-                <span class="chip">Fortran</span>
-                <span class="chip">EXPORT</span>
-                <span class="chip">Karma (kvis)</span>
-                <span class="chip">astropy</span>
-                <span class="chip">REBOUND/X</span>
-            </div>
-        </section>
-
-        <section id="activities">
-            <h2>Leadership &amp; Activities</h2>
-            <ul class="list">
-                <li>
-                    <strong>BC Children’s Hospital START Program</strong>
-                    <span>Oct 2017 – May 2018</span>
-                </li>
-                <li>
-                    <strong>Vietnamese Buddhist Youth Association – Vancouver Chapter</strong>
-                    <span>Dec 2016 – May 2018</span>
-                </li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>
-                For research collaborations or academic inquiries, reach out via
-                <a href="mailto:tdo47@uwo.ca">tdo47@uwo.ca</a> or connect on
-                <a href="https://github.com/tamidodo">GitHub</a>.
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; <span id="year"></span> Tam Do. All rights reserved.</p>
-    </footer>
-
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+<script src="js/main.js"></script>
 </body>
 </html>

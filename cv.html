@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV — Tammy Do</title>
+<meta name="description" content="Curriculum vitae of Tammy Do — education, research, and professional experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="sky" aria-hidden="true"></div>
+<div class="meteor" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 26 26" fill="none">
+          <path d="M3 23 L15.5 10.5" stroke="url(#mg)" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="18.5" cy="7.5" r="4" fill="url(#mg2)"/>
+          <defs>
+            <linearGradient id="mg" x1="3" y1="23" x2="15.5" y2="10.5" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#ff7a45" stop-opacity="0"/><stop offset="1" stop-color="#ffb454"/>
+            </linearGradient>
+            <radialGradient id="mg2" cx="0.4" cy="0.35" r="0.7">
+              <stop stop-color="#ffd9a0"/><stop offset="1" stop-color="#ff5c3a"/>
+            </radialGradient>
+          </defs>
+        </svg>
+      </span>
+      <span>Tammy <b class="accent">Do</b></span>
+    </a>
+    <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="cv.html" class="active">CV</a></li>
+      <li><a href="coding.html">Coding</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap" style="padding-bottom:18px;">
+    <div class="cv-head">
+      <div>
+        <p class="eyebrow">Curriculum vitae</p>
+        <h1 style="font-family:var(--display);font-size:clamp(2rem,4.5vw,3rem);font-weight:700;letter-spacing:-0.02em;">CV</h1>
+      </div>
+      <!-- Drop your PDF in the site folder and this button will serve it -->
+      <a class="btn btn--solid" href="Academic_CV.pdf" download>Download PDF ↓</a>
+    </div>
+  </section>
+
+  <section class="section wrap" style="padding-top:24px;">
+
+    <!-- EDUCATION -->
+    <div class="cv-block">
+      <h3>Education</h3>
+      <div class="cv-item">
+        <div class="cv-item__when">Sept 2025 – Present</div>
+        <div class="cv-item__what">
+          <h4>PhD, Astronomy</h4>
+          <p class="org">University of Western Ontario · London, Canada</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">Sept 2023 – Aug 2025</div>
+        <div class="cv-item__what">
+          <h4>MSc, Astronomy</h4>
+          <p class="org">University of Western Ontario · London, Canada</p>
+          <p>Two years of coursework and research.</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">Sept 2017 – Apr 2022</div>
+        <div class="cv-item__what">
+          <h4>BSc, Honours Physics and Astronomy</h4>
+          <p class="org">University of British Columbia · Vancouver, Canada</p>
+          <p>Graduated with Honours with Distinction. Included a 16-month Co-op program between third and fourth year.</p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">Sept 2013 – Jun 2017</div>
+        <div class="cv-item__what">
+          <h4>High School Graduate</h4>
+          <p class="org">York House School · Vancouver, Canada</p>
+          <p>Condensed five years of coursework into four to graduate a year early.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESEARCH PROJECTS -->
+    <div class="cv-block">
+      <h3>Research Projects</h3>
+      <div class="cv-item">
+        <div class="cv-item__when">MSc thesis</div>
+        <div class="cv-item__what">
+          <h4>Dynamically characterizing sporadic meteoroid origins</h4>
+          <p>Simulated orbital histories for 387 observed meteors with REBOUND/x to classify them as asteroidal or cometary, focusing on velocities below 35 km/s. <a class="pub__venue" href="research.html#meteoroids" style="color:var(--ion);">Details →</a></p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">MSc work</div>
+        <div class="cv-item__what">
+          <h4>Luciole low Earth orbit satellite monitoring</h4>
+          <p>Built a public-facing dashboard for megaconstellation satellites visible over Canada, for space situational awareness. <a class="pub__venue" href="research.html#luciole" style="color:var(--ion);">Details →</a></p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">BSc honours thesis</div>
+        <div class="cv-item__what">
+          <h4>Yarkovsky modification &amp; the close approach of 99942 Apophis</h4>
+          <p>High-fidelity REBOUND/x simulations of Apophis's 2029 flyby; recomputed gravitational keyholes. <a class="pub__venue" href="research.html#apophis" style="color:var(--ion);">Details →</a></p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">Co-op project</div>
+        <div class="cv-item__what">
+          <h4>New observations of the supernova remnant CTA 1</h4>
+          <p>Processed DRAO Synthesis Telescope data; published in ApJ (2024). <a class="pub__venue" href="research.html#cta1" style="color:var(--ion);">Details →</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WORK EXPERIENCE -->
+    <div class="cv-block">
+      <h3>Work Experience</h3>
+      <div class="cv-item">
+        <div class="cv-item__when">Sept 2023 – Present</div>
+        <div class="cv-item__what">
+          <h4>Research Assistant</h4>
+          <p class="org">University of Western Ontario</p>
+          <ul>
+            <li>Researched the origins of meteoroids from their orbital evolution histories.</li>
+            <li>Created public-facing visualizations of real-time low Earth orbit satellite tracking data.</li>
+            <li>Built efficient, "plug-and-play" data pipelines and Postgres databases for the Western Meteor Physics Group.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">Jan 2024 – Jun 2025</div>
+        <div class="cv-item__what">
+          <h4>Teaching Assistant</h4>
+          <p class="org">University of Western Ontario</p>
+          <ul>
+            <li>Supervised and demonstrated first-year physics labs; graded reports and gave feedback.</li>
+            <li>Ran help sessions and office hours; monitored asynchronous support forums.</li>
+            <li>Invigilated exams and midterms.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">May 2022 – Apr 2024</div>
+        <div class="cv-item__what">
+          <h4>Dash Solutions Architect</h4>
+          <p class="org">Plotly</p>
+          <ul>
+            <li>Developed production-grade dashboard visualizations with Plotly/Dash for automotive and financial-investment clients.</li>
+            <li>Ran office hours, built proof-of-concept demos, and presented live demos to prospects including NASA.</li>
+            <li>Researched Dash Enterprise integrations with data warehouses such as Databricks; authored a video tutorial and Medium article.</li>
+            <li>Led in-person developer workshops and mentored a class of three interns on their Dash projects.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">Jun 2022 – Oct 2022</div>
+        <div class="cv-item__what">
+          <h4>Planetary Defense Analyst</h4>
+          <p class="org">Outer Space Institute</p>
+          <ul>
+            <li>Summarized conference papers and literature on Apophis/Bennu mission planning for a grant application.</li>
+            <li>Simulated satellite reconnaissance missions to Apophis and similar-sized asteroids.</li>
+            <li>Built a user-interactive dashboard of the simulation outcomes.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">Oct 2020 – Jun 2022</div>
+        <div class="cv-item__what">
+          <h4>Data Consultant</h4>
+          <p class="org">Allwest Auto Insurance</p>
+          <ul>
+            <li>Built a semi-automated data pipeline with Python, SQL, and Google Cloud Platform (BigQuery, Cloud Functions, Pub/Sub, Data Studio, Cloud Logging).</li>
+            <li>Explored ML applications and Flask/HTML for embedding visualizations in a web app.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">Jan 2021 – Aug 2021</div>
+        <div class="cv-item__what">
+          <h4>Research Student</h4>
+          <p class="org">National Research Council</p>
+          <ul>
+            <li>Pre-processed DRAO Synthesis Telescope data using Perl wrappers around Fortran programs.</li>
+            <li>Used observatory software (DRAO EXPORT, Karma/kvis) and wrote astropy code to analyze data cubes around CTA 1.</li>
+            <li>Gave weekly science updates to the DRAO/DAO science group.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">May 2020 – Dec 2020</div>
+        <div class="cv-item__what">
+          <h4>Learning Technology Rover</h4>
+          <p class="org">UBC Faculty of Medicine IT · Educational Technology</p>
+          <ul>
+            <li>Helped instructors and students integrate technology during the shift to online learning.</li>
+            <li>Created tutorials and media content, hosted workshops, and handled event and individual IT support.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">Jun 2021 – Aug 2021</div>
+        <div class="cv-item__what">
+          <h4>High School Math &amp; Programming Tutor</h4>
+          <p class="org">Independent</p>
+          <ul>
+            <li>Covered Grade 9/10 BC math curriculum and taught an introduction to Python.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">2018 – 2020</div>
+        <div class="cv-item__what">
+          <h4>Research Assistant</h4>
+          <p class="org">Dr. Winters' Cities, Health &amp; Active Transportation Lab · Dr. Doan's Lab, BC Children's Hospital</p>
+          <ul>
+            <li>Data collection using Survey123, ArcGIS, and REDCap.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRANTS -->
+    <div class="cv-block">
+      <h3>Grants &amp; Scholarships</h3>
+      <div class="cv-item">
+        <div class="cv-item__when">Jun 2026</div>
+        <div class="cv-item__what">
+          <h4>Canadian Student Participation in Space Conferences and Training Events</h4>
+          <p class="org">Canadian Space Agency</p>
+          <p>Grant awarded toward attendance of the Asteroids, Comets and Meteors 2026 conference in Poland. <span class="placeholder">[Add award amount.]</span></p>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">Jun 2017</div>
+        <div class="cv-item__what">
+          <h4>BC Achievement Scholarship</h4>
+          <p class="org">BC Ministry of Education and Child Care</p>
+          <p>$1,250 CAD awarded to the top 8,000 BC high school graduates toward post-secondary tuition.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- VOLUNTEER -->
+    <div class="cv-block">
+      <h3>Volunteer Experience</h3>
+      <div class="cv-item">
+        <div class="cv-item__when">Mar 2016 – Aug 2024</div>
+        <div class="cv-item__what">
+          <h4>Ultimate Frisbee Coach</h4>
+          <p class="org">Vancouver, BC &amp; London, ON</p>
+          <ul>
+            <li>Assistant-coached a girls' elementary team (York House School) and coached a co-ed high school team (Lord Byng).</li>
+            <li>Established London, Ontario's first junior women's competitive club ultimate team, including recruitment clinics, organization, and coaching.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">Oct 2017 – May 2018</div>
+        <div class="cv-item__what">
+          <h4>Research Assistant</h4>
+          <p class="org">BC Children's Hospital START Program</p>
+          <ul>
+            <li>Screened and recruited ED patients for research studies; entered data into REDCap.</li>
+            <li>Ran point-of-care rapid viral testing and standardized assessments (e.g. BESS concussion test).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cv-item">
+        <div class="cv-item__when">Dec 2016 – May 2018</div>
+        <div class="cv-item__what">
+          <h4>Youth Group Leader</h4>
+          <p class="org">Vietnamese Buddhist Youth Association · Vancouver Chapter</p>
+          <ul>
+            <li>Organized and led activities for children aged 5–13, including Vietnamese language and Buddhist lessons.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>© 2026 Tammy Do</p>
+    <p><a href="mailto:tdo47@uwo.ca">tdo47@uwo.ca</a> · <a href="https://github.com/tamidodo" target="_blank" rel="noopener">github.com/tamidodo</a></p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
