@@ -1,164 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Coding — Tammy Do</title>
-<meta name="description" content="Code and software projects by Tammy Do — simulation pipelines, dashboards, and data infrastructure.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coding — Tam Do</title>
+  <meta name="description"
+    content="Code and software projects by Tam Do — simulation pipelines, dashboards, and data infrastructure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<div class="sky" aria-hidden="true"></div>
-<div class="meteor" aria-hidden="true"></div>
+  <div class="sky" aria-hidden="true"></div>
+  <div class="meteor" aria-hidden="true"></div>
 
-<header class="nav">
-  <div class="nav__inner">
-    <a class="brand" href="index.html">
-      <span class="brand__mark" aria-hidden="true">
-        <svg viewBox="0 0 26 26" fill="none">
-          <path d="M3 23 L15.5 10.5" stroke="url(#mg)" stroke-width="2.4" stroke-linecap="round"/>
-          <circle cx="18.5" cy="7.5" r="4" fill="url(#mg2)"/>
-          <defs>
-            <linearGradient id="mg" x1="3" y1="23" x2="15.5" y2="10.5" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#ff7a45" stop-opacity="0"/><stop offset="1" stop-color="#ffb454"/>
-            </linearGradient>
-            <radialGradient id="mg2" cx="0.4" cy="0.35" r="0.7">
-              <stop stop-color="#ffd9a0"/><stop offset="1" stop-color="#ff5c3a"/>
-            </radialGradient>
-          </defs>
-        </svg>
-      </span>
-      <span>Tammy <b class="accent">Do</b></span>
-    </a>
-    <button class="nav__toggle" aria-label="Toggle menu">☰</button>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="coding.html" class="active">Coding</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-</header>
-
-<main>
-  <section class="hero wrap" style="padding-bottom:18px;">
-    <p class="eyebrow">Software &amp; tooling</p>
-    <h1 style="font-family:var(--display);font-size:clamp(2rem,4.5vw,3rem);font-weight:700;letter-spacing:-0.02em;">Coding</h1>
-    <p style="color:var(--ink-soft);max-width:64ch;">N-body simulation pipelines, scientific dashboards, and data infrastructure — across research and industry. Filter by language below. Add GitHub links and screenshots where marked.</p>
-  </section>
-
-  <section class="section wrap" style="padding-top:28px;">
-    <div class="filters" role="tablist" aria-label="Filter projects by language">
-      <button class="filter active" data-lang="all">All</button>
-      <button class="filter" data-lang="python">Python</button>
-      <button class="filter" data-lang="javascript">JavaScript</button>
-      <button class="filter" data-lang="sql">SQL</button>
-      <button class="filter" data-lang="perl">Perl</button>
-      <button class="filter" data-lang="fortran">Fortran</button>
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 26 26" fill="none">
+            <path d="M3 23 L15.5 10.5" stroke="url(#mg)" stroke-width="2.4" stroke-linecap="round" />
+            <circle cx="18.5" cy="7.5" r="4" fill="url(#mg2)" />
+            <defs>
+              <linearGradient id="mg" x1="3" y1="23" x2="15.5" y2="10.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ff7a45" stop-opacity="0" />
+                <stop offset="1" stop-color="#ffb454" />
+              </linearGradient>
+              <radialGradient id="mg2" cx="0.4" cy="0.35" r="0.7">
+                <stop stop-color="#ffd9a0" />
+                <stop offset="1" stop-color="#ff5c3a" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </span>
+        <span>Tam <b class="accent">Do</b></span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="coding.html" class="active">Coding</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
+  </header>
 
-    <div class="projects">
+  <main>
+    <section class="hero wrap" style="padding-bottom:18px;">
+      <p class="eyebrow">Software &amp; tooling</p>
+      <h1 style="font-family:var(--display);font-size:clamp(2rem,4.5vw,3rem);font-weight:700;letter-spacing:-0.02em;">
+        Coding</h1>
+      <p style="color:var(--ink-soft);max-width:64ch;">N-body simulation pipelines, scientific dashboards, and data
+        infrastructure, across scientific research and commercial industries. Filter by language below (note that some
+        links are currently broken, this site is under maintenance)</p>
+    </section>
 
-      <article class="project" data-langs="python">
-        <div class="project__head">
-          <span class="lang-tag">Python</span>
-          <h3>Meteoroid origin classification pipeline</h3>
-        </div>
-        <p>An N-body simulation pipeline built on REBOUND/x that reconstructs the orbital histories of 387 observed meteors — including radiation-pressure and gravitational forces — and derives probability distributions over ejection times to classify each meteoroid as asteroidal or cometary.</p>
-        <div class="project__links">
-          <a class="chip" href="https://github.com/tamidodo" target="_blank" rel="noopener">GitHub ↗</a>
-          <a class="chip" href="research.html#meteoroids">Research →</a>
-        </div>
-      </article>
+    <section class="section wrap" style="padding-top:28px;">
+      <div class="filters" role="tablist" aria-label="Filter projects by language">
+        <button class="filter active" data-lang="all">All</button>
+        <button class="filter" data-lang="python">Python</button>
+        <button class="filter" data-lang="sql">SQL</button>
+      </div>
 
-      <article class="project" data-langs="python javascript">
-        <div class="project__head">
-          <span class="lang-tag">Python</span><span class="lang-tag">JavaScript</span>
-          <h3>Luciole satellite-tracking dashboard</h3>
-        </div>
-        <p>A public-facing Plotly Dash application surfacing nightly megaconstellation satellite detections over Canada: network-wide detection counts and brightness statistics, an interactive map of ground tracks, and Database/Drilldown views with user-customizable graphs and tables.</p>
-        <p class="lorem">[Optional: note the stack — Dash, Plotly, Dash Mantine Components, Postgres — or anything you'd like to highlight.]</p>
-        <div class="project__links">
-          <a class="chip" href="#">Live dashboard ↗</a>
-          <a class="chip" href="https://github.com/tamidodo" target="_blank" rel="noopener">GitHub ↗</a>
-          <a class="chip" href="research.html#luciole">Research →</a>
-        </div>
-      </article>
+      <div class="projects">
 
-      <article class="project" data-langs="sql python">
-        <div class="project__head">
-          <span class="lang-tag">SQL</span><span class="lang-tag">Python</span>
-          <h3>Meteor Physics Group data infrastructure</h3>
-        </div>
-        <p>"Plug-and-play" data pipelines and Postgres databases for the Western Meteor Physics Group, with reusable interfaces that let researchers load, sync, and query large observational datasets without bespoke wiring each time.</p>
-        <div class="project__links">
-          <a class="chip" href="https://github.com/tamidodo" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-      </article>
+        <article class="project" data-langs="python">
+          <div class="project__head">
+            <span class="lang-tag">Python</span>
+            <h3>Meteoroid origin classification pipeline</h3>
+          </div>
+          <p>An N-body simulation pipeline built on REBOUND/REBOUNDX that reconstructs the orbital histories of observed
+            meteors, including radiation-pressure and gravitational forces, and derives probability distributions over
+            ejection times to classify each meteoroid as asteroidal or cometary.</p>
+          <div class="project__links">
+            <a class="chip" href="https://github.com/tamidodo" target="_blank" rel="noopener">GitHub ↗</a>
+            <a class="chip" href="research.html#meteoroids">Research →</a>
+          </div>
+        </article>
 
-      <article class="project" data-langs="python">
-        <div class="project__head">
-          <span class="lang-tag">Python</span>
-          <h3>Apophis close-approach simulations</h3>
-        </div>
-        <p>High-fidelity REBOUND/x simulations sweeping a range of post-2029-flyby scenarios for 99942 Apophis, evaluating Earth's effect on the asteroid's spin state and recomputing the gravitational keyholes that govern future impact risk.</p>
-        <div class="project__links">
-          <a class="chip" href="https://github.com/tamidodo" target="_blank" rel="noopener">GitHub ↗</a>
-          <a class="chip" href="research.html#apophis">Research →</a>
-        </div>
-      </article>
+        <article class="project" data-langs="python sql">
+          <div class="project__head">
+            <span class="lang-tag">Python</span><span class="lang-tag">SQL</span>
+            <h3>Luciole satellite-tracking dashboard</h3>
+          </div>
+          <p>A public-facing web application (built with Plotly/Dash and a Postgres database backend) displaying nightly
+            megaconstellation satellite detections over
+            Canada: network-wide detection counts and brightness statistics, an interactive map of ground tracks, and
+            mosaic views of the stacked raw images.</p>
+          <div class="project__links">
+            <a class="chip" href="#">Live dashboard ↗</a>
+            <a class="chip" href="https://github.com/tamidodo" target="_blank" rel="noopener">GitHub ↗</a>
+            <a class="chip" href="research.html#luciole">Research →</a>
+          </div>
+        </article>
 
-      <article class="project" data-langs="python sql javascript">
-        <div class="project__head">
-          <span class="lang-tag">Python</span><span class="lang-tag">SQL</span><span class="lang-tag">JavaScript</span>
-          <h3>Semi-automated insurance data pipeline</h3>
-        </div>
-        <p>An end-to-end data-processing pipeline on Google Cloud Platform: BigQuery for storage, Cloud Functions for automated cleaning, Pub/Sub for triggering, Data Studio for dashboards, and Cloud Logging for notifications — with Flask/HTML for embedding visualizations and data tables in a web app.</p>
-        <div class="project__links">
-          <a class="chip" href="#">Write-up ↗</a>
-        </div>
-      </article>
+        <article class="project" data-langs="sql python">
+          <div class="project__head">
+            <span class="lang-tag">SQL</span><span class="lang-tag">Python</span>
+            <h3>Meteor Physics Group data infrastructure</h3>
+          </div>
+          <p>"Plug-and-play" data pipelines and Postgres databases for the Western Meteor Physics Group, with reusable
+            interfaces that let researchers load, sync, and query large observational datasets without bespoke wiring
+            each time. These are internal dashboards for WMPG use only.</p>
+        </article>
 
-      <article class="project" data-langs="javascript python sql">
-        <div class="project__head">
-          <span class="lang-tag">JavaScript</span><span class="lang-tag">Python</span>
-          <h3>Dash Enterprise × Databricks connector demo</h3>
-        </div>
-        <p>A sample dashboard demonstrating the Dash Enterprise–Databricks connector API, paired with a video tutorial and a Medium article on connecting large data-warehouse datasets to Dash apps.</p>
-        <div class="project__links">
-          <a class="chip" href="#">Video ↗</a>
-          <a class="chip" href="publications.html">Article</a>
-        </div>
-      </article>
+        <article class="project" data-langs="python">
+          <div class="project__head">
+            <span class="lang-tag">Python</span>
+            <h3>Apophis close-approach simulations</h3>
+          </div>
+          <p>High-fidelity REBOUND/REBOUNDX simulations sweeping a range of post-2029-flyby scenarios for 99942 Apophis,
+            evaluating the close-approach's effect on the Yarkovsky effect strength acting on the asteroid and
+            recomputing the gravitational keyholes that
+            govern future impact risk.</p>
+          <div class="project__links">
+            <a class="chip" href="https://github.com/tamidodo/Apophis" target="_blank" rel="noopener">GitHub ↗</a>
+            <a class="chip" href="research.html#apophis">Research →</a>
+          </div>
+        </article>
 
-      <article class="project" data-langs="python perl fortran">
-        <div class="project__head">
-          <span class="lang-tag">Python</span><span class="lang-tag">Perl</span><span class="lang-tag">Fortran</span>
-          <h3>CTA 1 radio data processing &amp; analysis</h3>
-        </div>
-        <p>Perl wrappers driving legacy Fortran programs to pre-process DRAO Synthesis Telescope data, plus astropy code to process and analyze the resulting data cubes for the study of the supernova remnant CTA 1.</p>
-        <div class="project__links">
-          <a class="chip" href="https://ui.adsabs.harvard.edu/abs/2024ApJ...977..271D" target="_blank" rel="noopener">ApJ paper ↗</a>
-          <a class="chip" href="research.html#cta1">Research →</a>
-        </div>
-      </article>
+        <article class="project" data-langs="python sql">
+          <div class="project__head">
+            <span class="lang-tag">Python</span><span class="lang-tag">SQL</span>
+            <h3>Semi-automated insurance data pipeline</h3>
+          </div>
+          <p>An end-to-end data-processing pipeline on Google Cloud Platform: BigQuery for storage, Cloud Functions for
+            automated cleaning, Pub/Sub for triggering, Data Studio for dashboards, and Cloud Logging for notifications,
+            with Flask/HTML for embedding visualizations and data tables in a web app. This is a private client project,
+            not accessible on Github.</p>
+        </article>
 
+        <article class="project" data-langs="javascript python sql">
+          <div class="project__head">
+            <span class="lang-tag">JavaScript</span><span class="lang-tag">Python</span>
+            <h3>Dash Enterprise × Databricks connector demo</h3>
+          </div>
+          <p>A sample dashboard demonstrating the Dash Enterprise–Databricks connector API, paired with a video tutorial
+            and a Medium article on connecting large data-warehouse datasets to Dash apps.</p>
+          <div class="project__links">
+            <a class="chip" href="https://github.com/plotly/dash-dbx-sql-advanced-v2" target="_blank"
+              rel="noopener">Github </a>
+            <a class="chip" href="https://www.youtube.com/watch?v=tmte0KqewD0" target="_blank" rel="noopener">Video
+              ↗</a>
+            <a class="chip"
+              href="https://medium.com/plotly/building-plotly-dash-apps-on-a-lakehouse-with-databricks-sql-advanced-edition-4e1015593633"
+              target="_blank" rel="noopener">Medium Article</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>© 2026 Tam Do</p>
+      <p><a href="mailto:tdo47@uwo.ca">tdo47@uwo.ca</a> · <a href="https://github.com/tamidodo" target="_blank"
+          rel="noopener">github.com/tamidodo</a></p>
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer class="foot">
-  <div class="wrap">
-    <p>© 2026 Tammy Do</p>
-    <p><a href="mailto:tdo47@uwo.ca">tdo47@uwo.ca</a> · <a href="https://github.com/tamidodo" target="_blank" rel="noopener">github.com/tamidodo</a></p>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>

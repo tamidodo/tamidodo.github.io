@@ -1,133 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact — Tammy Do</title>
-<meta name="description" content="Get in touch with Tammy Do — email, office, and upcoming conferences.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Tam Do</title>
+  <meta name="description" content="Get in touch with Tam Do — email, office, and upcoming conferences.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<div class="sky" aria-hidden="true"></div>
-<div class="meteor" aria-hidden="true"></div>
+  <div class="sky" aria-hidden="true"></div>
+  <div class="meteor" aria-hidden="true"></div>
 
-<header class="nav">
-  <div class="nav__inner">
-    <a class="brand" href="index.html">
-      <span class="brand__mark" aria-hidden="true">
-        <svg viewBox="0 0 26 26" fill="none">
-          <path d="M3 23 L15.5 10.5" stroke="url(#mg)" stroke-width="2.4" stroke-linecap="round"/>
-          <circle cx="18.5" cy="7.5" r="4" fill="url(#mg2)"/>
-          <defs>
-            <linearGradient id="mg" x1="3" y1="23" x2="15.5" y2="10.5" gradientUnits="userSpaceOnUse">
-              <stop stop-color="#ff7a45" stop-opacity="0"/><stop offset="1" stop-color="#ffb454"/>
-            </linearGradient>
-            <radialGradient id="mg2" cx="0.4" cy="0.35" r="0.7">
-              <stop stop-color="#ffd9a0"/><stop offset="1" stop-color="#ff5c3a"/>
-            </radialGradient>
-          </defs>
-        </svg>
-      </span>
-      <span>Tammy <b class="accent">Do</b></span>
-    </a>
-    <button class="nav__toggle" aria-label="Toggle menu">☰</button>
-    <ul class="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="publications.html">Publications</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="coding.html">Coding</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </div>
-</header>
-
-<main>
-  <section class="hero wrap" style="padding-bottom:18px;">
-    <p class="eyebrow">Get in touch</p>
-    <h1 style="font-family:var(--display);font-size:clamp(2rem,4.5vw,3rem);font-weight:700;letter-spacing:-0.02em;">Let's talk</h1>
-    <p style="color:var(--ink-soft);max-width:58ch;">Questions about meteoroid dynamics, the Luciole system, or a possible collaboration? The fastest way to reach me is email.</p>
-  </section>
-
-  <section class="section wrap" style="padding-top:28px;">
-    <div class="contact-grid">
-
-      <!-- left column -->
-      <div style="display:grid;gap:24px;">
-        <div class="contact-card">
-          <h3>Reach me</h3>
-          <div class="contact-row">
-            <span class="lbl">Email</span>
-            <a href="mailto:tdo47@uwo.ca">tdo47@uwo.ca</a>
-          </div>
-          <div class="contact-row">
-            <span class="lbl">Dept.</span>
-            <span>Physics &amp; Astronomy, University of Western Ontario</span>
-          </div>
-          <div class="contact-row">
-            <span class="lbl">Office</span>
-            <span class="placeholder">[Add your building / room number]</span>
-          </div>
-          <div class="socials">
-            <a class="chip" href="https://github.com/tamidodo" target="_blank" rel="noopener">GitHub ↗</a>
-            <a class="chip" href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
-            <a class="chip" href="#" target="_blank" rel="noopener">Google Scholar ↗</a>
-            <a class="chip" href="#" target="_blank" rel="noopener">ORCID ↗</a>
-          </div>
-        </div>
-
-        <div class="contact-card">
-          <h3>Upcoming &amp; recent</h3>
-          <table class="conf-table">
-            <tbody>
-              <tr>
-                <td>Late 2026</td>
-                <td>2026</td>
-                <td>Asteroids, Comets &amp; Meteors (ACM) — Poznań, Poland</td>
-              </tr>
-              <tr>
-                <td>Jan 2025</td>
-                <td>2025</td>
-                <td>Meteoroids 2025 — Perth, Australia <span style="color:var(--ink-faint);">· oral</span></td>
-              </tr>
-              <tr>
-                <td class="placeholder">[date]</td>
-                <td class="placeholder">[year]</td>
-                <td class="lorem">Lorem ipsum conference — city, country</td>
-              </tr>
-            </tbody>
-          </table>
-          <p class="lorem" style="margin:14px 0 0;font-size:0.84rem;">Edit this table to list your talks, posters, and meetings.</p>
-        </div>
-      </div>
-
-      <!-- right column -->
-      <div class="contact-card">
-        <h3>Where to find me</h3>
-        <p style="color:var(--ink-soft);font-size:0.92rem;margin-top:0;">University of Western Ontario · London, Ontario, Canada</p>
-        <iframe
-          class="map-embed"
-          title="University of Western Ontario, Physics and Astronomy"
-          src="https://maps.google.com/maps?q=Physics%20and%20Astronomy%20Building%20Western%20University%20London%20Ontario&t=&z=14&ie=UTF8&iwloc=&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p class="lorem" style="font-size:0.84rem;margin-bottom:0;">Swap the embed query for your exact building if you'd like a more precise pin.</p>
-      </div>
-
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 26 26" fill="none">
+            <path d="M3 23 L15.5 10.5" stroke="url(#mg)" stroke-width="2.4" stroke-linecap="round" />
+            <circle cx="18.5" cy="7.5" r="4" fill="url(#mg2)" />
+            <defs>
+              <linearGradient id="mg" x1="3" y1="23" x2="15.5" y2="10.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#ff7a45" stop-opacity="0" />
+                <stop offset="1" stop-color="#ffb454" />
+              </linearGradient>
+              <radialGradient id="mg2" cx="0.4" cy="0.35" r="0.7">
+                <stop stop-color="#ffd9a0" />
+                <stop offset="1" stop-color="#ff5c3a" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </span>
+        <span>Tam <b class="accent">Do</b></span>
+      </a>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="coding.html">Coding</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
     </div>
-  </section>
-</main>
+  </header>
 
-<footer class="foot">
-  <div class="wrap">
-    <p>© 2026 Tammy Do</p>
-    <p><a href="mailto:tdo47@uwo.ca">tdo47@uwo.ca</a> · <a href="https://github.com/tamidodo" target="_blank" rel="noopener">github.com/tamidodo</a></p>
-  </div>
-</footer>
+  <main>
+    <section class="hero wrap" style="padding-bottom:18px;">
+      <p class="eyebrow">Get in touch</p>
+      <h1 style="font-family:var(--display);font-size:clamp(2rem,4.5vw,3rem);font-weight:700;letter-spacing:-0.02em;">
+        Let's talk</h1>
+      <p style="color:var(--ink-soft);max-width:58ch;">Questions about small body dynamical integrations, low-velocity
+        Earth impactors, or a
+        possible collaboration? The fastest way to reach me is email, unless you can come knock on our office door.</p>
+    </section>
 
-<script src="js/main.js"></script>
+    <section class="section wrap" style="padding-top:28px;">
+      <div class="contact-grid">
+
+        <!-- left column -->
+        <div style="display:grid;gap:24px;">
+          <div class="contact-card">
+            <h3>Reach me</h3>
+            <div class="contact-row">
+              <span class="lbl">Email</span>
+              <a href="mailto:tdo47@uwo.ca">tdo47@uwo.ca</a>
+            </div>
+            <div class="contact-row">
+              <span class="lbl">Dept.</span>
+              <span>Physics &amp; Astronomy, University of Western Ontario</span>
+            </div>
+            <div class="contact-row">
+              <span class="lbl">Office</span>
+              <span class="placeholder">PAB 242</span>
+            </div>
+            <div class="socials">
+              <a class="chip" href="https://github.com/tamidodo" target="_blank" rel="noopener">GitHub ↗</a>
+              <a class="chip" href="https://www.linkedin.com/in/tammy-do-43b07a137/" target="_blank"
+                rel="noopener">LinkedIn ↗</a>
+              <a class="chip" href="https://scholar.google.com/citations?user=mvwR3OoAAAAJ&hl=en" target="_blank"
+                rel="noopener">Google Scholar ↗</a>
+              <a class="chip" href="https://orcid.org/0009-0006-0795-970X" target="_blank" rel="noopener">ORCID ↗</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <h3>Upcoming &amp; recent</h3>
+            <table class="conf-table">
+              <tbody>
+                <tr>
+                  <td>Sept 15-18</td>
+                  <td>2026</td>
+                  <td>27th Advanced Maui Optical and Space Surveillance Technologies — Maui, USA <span
+                      style="color:var(--ink-faint);">· oral presentation</span></td>
+                </tr>
+                <tr>
+                  <td>July 6-10</td>
+                  <td>2026</td>
+                  <td>15th Asteroids, Comets &amp; Meteors (ACM) — Poznań, Poland <span
+                      style="color:var(--ink-faint);">· oral presentation</span></td>
+                </tr>
+                <tr>
+                  <td>July 7-11</td>
+                  <td>2025</td>
+                  <td>12th Meteoroids — Perth, Australia <span style="color:var(--ink-faint);">· oral
+                      presentation</span></td>
+                </tr>
+                <tr>
+                  <td>May 11-12</td>
+                  <td>2022</td>
+                  <td>Apophis T-7 Years — Virtual <span style="color:var(--ink-faint);">· oral presentation</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- right column -->
+        <div class="contact-card">
+          <h3>Where to find me</h3>
+          <p style="color:var(--ink-soft);font-size:0.92rem;margin-top:0;">University of Western Ontario · London,
+            Ontario, Canada</p>
+          <iframe class="map-embed" title="University of Western Ontario, Physics and Astronomy"
+            src="https://maps.google.com/maps?q=Physics%20and%20Astronomy%20Building%20Western%20University%20London%20Ontario&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>© 2026 Tam Do</p>
+      <p><a href="mailto:tdo47@uwo.ca">tdo47@uwo.ca</a> · <a href="https://github.com/tamidodo" target="_blank"
+          rel="noopener">github.com/tamidodo</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
